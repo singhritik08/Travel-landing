@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#6D28D9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <a href="#" class="text-primary text-2xl font-bold">Ghumakkar</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-primary">Home</a></li>
+                <li><a href="#about" class="hover:text-primary">About</a></li>
+                <li><a href="#services" class="hover:text-primary">Services</a></li>
+                <li><a href="#blog" class="hover:text-primary">Blog</a></li>
+                <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+            </ul>
+            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary">Login / Signup</button>
+        </nav>
+    </header>
+
+    <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center text-center text-white fade-in" style="background-image: url('./assets/bg1.jpeg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10">
+            <h1 class="text-5xl font-bold">Explore the World with GlobeTrek</h1>
+            <p class="mt-4 text-lg">Discover new places and adventures with us.</p>
+            <div class="mt-6 space-x-4">
+                <button class="bg-accent text-white px-6 py-3 rounded-lg hover:bg-yellow-500">Book Now</button>
+                <button class="bg-white text-primary px-6 py-3 rounded-lg hover:bg-gray-200">Learn More</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about" class="py-16 bg-white fade-in">
+        <div class="container mx-auto text-center max-w-3xl">
+            <h2 class="text-4xl font-semibold text-primary">About Us</h2>
+            <p class="mt-4 text-gray-600 text-lg">At GlobeTrek, we believe that traveling is more than just visiting places; it's about creating lifelong memories and enriching experiences. Our team of travel experts is dedicated to curating the best travel plans that cater to your interests, ensuring you get the most out of every trip.</p>
+            <div class="flex justify-center mt-6 space-x-8">
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md w-1/3">
+                    <h3 class="text-xl font-semibold text-secondary">Personalized Itineraries</h3>
+                    <p class="mt-2 text-gray-600">Tailor-made travel plans designed just for you.</p>
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md w-1/3">
+                    <h3 class="text-xl font-semibold text-secondary">Expert Guides</h3>
+                    <p class="mt-2 text-gray-600">Experience destinations with knowledgeable local guides.</p>
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md w-1/3">
+                    <h3 class="text-xl font-semibold text-secondary">Best Deals</h3>
+                    <p class="mt-2 text-gray-600">Affordable travel packages with premium services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 bg-gray-100 fade-in">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-primary">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+                    <img src="./assets/tour.jpg" alt="Tours" class="w-full rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">TOURS</h3>
+                    <p class="text-gray-600 mt-2">Experience unforgettable tours with us.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+                    <img src="./assets/hiking.jpg" alt="Hiking" class="w-full rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">HIKING</h3>
+                    <p class="text-gray-600 mt-2">Explore the best hiking trails around the world.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+                    <img src="./assets/travel.jpg" alt="Travel" class="w-full rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">TRAVEL</h3>
+                    <p class="text-gray-600 mt-2">Let us plan your next perfect getaway.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="blog" class="py-16 bg-gray-100 fade-in">
+        <div class="container mx-auto text-center max-w-4xl">
+            <h2 class="text-4xl font-semibold text-primary">Travel Blog</h2>
+            <p class="mt-4 text-gray-600 text-lg">Stay inspired with our latest travel tips, guides, and destination highlights.</p>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="./assets/destination.jpg" alt="Destinations" class="w-full rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">Top 10 Destinations in 2025</h3>
+                    <p class="text-gray-600 mt-2">Discover the most breathtaking places to visit this year.</p>
+                    <a href="#" class="text-primary mt-4 block">Read More →</a>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="./assets/budget.jpg" alt="Budget Travel" class="w-full rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">Travel Hacks for Budget Trips</h3>
+                    <p class="text-gray-600 mt-2">Save money while enjoying an incredible travel experience.</p>
+                    <a href="#" class="text-primary mt-4 block">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-16 bg-white fade-in">
+        <div class="container mx-auto text-center max-w-3xl">
+            <h2 class="text-4xl font-semibold text-primary">Contact Us</h2>
+            <p class="mt-4 text-gray-600 text-lg">Have questions? Feel free to reach out to us.</p>
+            <form class="mt-6 space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg">
+                <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg">
+                <textarea placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-lg h-32"></textarea>
+                <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-6 bg-gray-800 text-white">
+        <p>&copy; 2025 Ghumakkar | Designed by Ritik Raj</p>
+    </footer>
+</body>
+</html>
